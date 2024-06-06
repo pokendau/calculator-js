@@ -22,8 +22,13 @@ function divide(dividend, divisor) {
 }
 
 function operate(a, b, op) {
-  a = parseInt(a);
-  b = parseInt(b);
+  if (a.includes(".") || b.includes(".")) {
+    a = parseFloat(a);
+    b = parseFloat(b);
+  } else {
+    a = parseInt(a);
+    b = parseInt(b);
+  }
   switch (op) {
     case "+":
       return add(a, b);
@@ -71,6 +76,7 @@ function splitIntoNumsAndOps(str) {
   let before = 0;
   for (let i = 0; i < str.length; i++) {
     if (operations.includes(str[i])) {
+      if (!str[i - 1] || str[i - 1] == " ") continue;
       ops.push(str[i]);
       nums.push(str.slice(before, i));
       before = i + 1;
