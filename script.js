@@ -6,10 +6,10 @@ function subtract(min, sub) {
   return min - sub;
 }
 
-function product(a, b) {
+function multiply(a, b) {
   return a * b;
 }
 
-function division(dividend, divisor) {
+function divide(dividend, divisor) {
   return dividend / divisor;
 }
