@@ -112,6 +112,22 @@ button {
     border-radius: 100%;
 }
 
+#ac {
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 100%;
+}
+
+#ac:hover {
+    background: var(--gray);
+    transition: all 150ms;
+}
+
 .number_button:hover {
     background-color: var(--gray);
     transition: all 150ms;
