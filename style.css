@@ -56,6 +56,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 75%;
+    gap: 0.5rem;
 }
 
 #col2 {
@@ -83,6 +84,11 @@ button {
     font-size: 2rem;
 }
 
+.op_button:hover {
+    background-color: #7194af;
+    transition: all 150ms;
+}
+
 #numbers {
     display: flex;
     flex-direction: column;
@@ -103,6 +109,12 @@ button {
     color: white;
     font-weight: 700;
     font-size: 1.5rem;
+    border-radius: 100%;
+}
+
+.number_button:hover {
+    background-color: var(--gray);
+    transition: all 150ms;
 }
 
 #equal_button {
@@ -113,4 +125,9 @@ button {
     border-radius: 32px;
     font-size: 1.5rem;
     font-weight: 800;
+}
+
+#equal_button:hover {
+    background-color: #f8cc3c;
+    transition: all 150ms;
 }
